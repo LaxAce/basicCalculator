@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  background-color: hsl(222, 26%, 31%);
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.container {
+  width: 30%;
+  margin: 5% auto;
+}
+
+/* ----------------Header------------------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: 20%;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 10px;
+  padding-bottom: 4px;
+}
+
+span {
+  margin: auto 6px;
+  font-size: 8px;
+}
+
+.theme-block {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.colors {
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 10px;
+
+  /* padding-left: 2px; */
+  padding: 3px 3px;
+  cursor: pointer;
+}
+
+.reds,
+.grays,
+.blues {
+  /* border: 0px; */
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  vertical-align: middle;
+  background-color: hsl(6, 63%, 50%);
+  margin-right: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.blues {
+  margin-right: 2px;
+  background-color: hsl(223, 31%, 20%);
+}
+.reds {
+  margin-left: 2px;
+}
+
+.grays {
+  background-color: hsl(223, 31%, 20%);
+}
+
+/* ------------------Screen------------------- */
+.screen {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(224, 36%, 15%);
+  height: 80px;
+  padding: 12px 16px;
+  margin-bottom: 14px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.input,
+.output {
+  width: 100%;
+  background-color: hsl(224, 36%, 15%);
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.output {
+  text-align: end;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ---------------Buttons-------------------- */
+.btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: hsl(223, 31%, 20%);
+  gap: 0;
+  padding: 16px 12px;
+  border-radius: 8px;
+}
+
+.btn {
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  margin: 12px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 2px solid hsl(28, 16%, 65%);
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.del,
+.reset {
+  background-color: hsl(225, 21%, 49%);
+  border-bottom: 2px solid hsl(224, 28%, 35%);
+  color: #fff;
+  font-size: 16px;
+}
+
+.equal {
+  background-color: hsl(6, 63%, 50%);
+  border-bottom: 2px solid hsl(6, 70%, 34%);
+  color: #fff;
+  font-size: 16px;
+}
+
+.reset {
+  grid-column: 1/3;
+}
+
+.equal {
+  grid-column: 3/5;
+}
+
+/* =================Queries====================== */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 60%;
+    margin: 5% auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 85%;
+    margin: 8% auto;
+  }
+
+  .btn {
+    height: 60px;
+  }
+}

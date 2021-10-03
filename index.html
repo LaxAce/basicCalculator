@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>calc</h1>
+        <div class="theme-block">
+          <h2>THEME</h2>
+          <div class="theme-colors">
+            <p><span> 1 </span> <span>2</span> <span>3</span></p>
+            <div class="colors">
+              <button class="reds"></button>
+              <button class="grays"></button>
+              <button class="blues"></button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="screen">
+        <input type="text" class="input hidden" disabled="disabled" />
+        <input type="text" class="output hidden" disabled="disabled" />
+      </section>
+
+      <section class="btns">
+        <button class="btn seven" value="7">7</button>
+        <button class="btn eight" value="8">8</button>
+        <button class="btn nine" value="9">9</button>
+        <button class="btn del">DEL</button>
+        <button class="btn four" value="4">4</button>
+        <button class="btn five" value="5">5</button>
+        <button class="btn six" value="6">6</button>
+        <button class="btn add" value=" + ">+</button>
+        <button class="btn one" value="1">1</button>
+        <button class="btn two" value="2">2</button>
+        <button class="btn three" value="3">3</button>
+        <button class="btn sub" value=" - ">-</button>
+        <button class="btn point" value=".">.</button>
+        <button class="btn zero" value="0">0</button>
+        <button class="btn" value=" / ">/</button>
+        <button class="btn" value=" * ">x</button>
+        <button class="btn reset">RESET</button>
+        <button class="btn equal">=</button>
+      </section>
+    </div>
+
+    <div class="attribution">
+      Coded by
+      <a href="https://github.com/LaxAce?tab=repositories">Abdulhafeez</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
